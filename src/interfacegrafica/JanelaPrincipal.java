@@ -63,13 +63,14 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton8.setText("Ganhe 4 cookies");
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/cok4.jpg"))); // NOI18N
+        jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, -1, -1));
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setForeground(new java.awt.Color(255, 51, 51));
@@ -109,23 +110,25 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 480));
 
-        jButton4.setText("Ganhe 2 cookies");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/cok2.jpg"))); // NOI18N
+        jButton4.setContentAreaFilled(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(611, 11, -1, -1));
 
-        jButton2.setText("Ganhe 1 cookie");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/cok1.jpg"))); // NOI18N
         jButton2.setToolTipText("Irá executar um ação");
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 110, -1));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 240, -1));
 
         jLabel1.setText("Clique para ganhar um cookie");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, -1, 26));
@@ -165,21 +168,16 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         if(cookies == 10){
             jButton3.setVisible(true);
             Dialogo dial = new Dialogo(this, true);
-            dial.setVisible(true);
-
-         
+            dial.setVisible(true);         
         }
 
-    
+            if(cookies == 50){
+             Dialogo dial = new Dialogo(this, true);
+             dial.setVisible(true);
+             jButton5.setVisible(true);
+        } 
             
-        
-        
 
-            
-            /*Dialogo dial = new Dialogo(this, true);
-            dial.setVisible(true);*/
-        
-        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -190,9 +188,16 @@ public class JanelaPrincipal extends javax.swing.JFrame {
              Dialogo dial = new Dialogo(this, true);
              dial.setVisible(true);
              jButton5.setVisible(true);
+        } 
+        if(cookies == 51){            
+             Dialogo dial = new Dialogo(this, true);
+             dial.setVisible(true);
+             jButton5.setVisible(true);                          
+    }
+             
 
     }//GEN-LAST:event_jButton4ActionPerformed
-    }
+    
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         this.dispose();
@@ -207,7 +212,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         jButton3.setVisible(false);
-        jButton4.setVisible(false);
         jButton8.setVisible(true);
         jButton5.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
