@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package interfacegrafica;
-
+import java.io.IOException;
 import javax.swing.JButton;
 
 /**
@@ -39,19 +39,17 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton8 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -80,36 +78,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, -1, -1));
-
-        jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/+2.jpg"))); // NOI18N
-        jButton3.setContentAreaFilled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 130, -1));
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/+4.jpg"))); // NOI18N
-        jButton5.setContentAreaFilled(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 110, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/thFHQLUP7R.jpg"))); // NOI18N
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-230, -40, -1, 420));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/thFHQLUP7R.jpg"))); // NOI18N
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 300, -1, -1));
-
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 480));
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, -1, -1));
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/cok2.jpg"))); // NOI18N
         jButton4.setContentAreaFilled(false);
@@ -118,10 +87,9 @@ public class JanelaPrincipal extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 3, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 150, 10));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/cok1.jpg"))); // NOI18N
@@ -132,24 +100,52 @@ public class JanelaPrincipal extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 240, -1));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 240, 90));
 
         jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 3, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
         jLabel1.setText("Clique para ganhar um cookie");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, 26));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/thNY62366J.jpg"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/+4.jpg"))); // NOI18N
+        jButton5.setContentAreaFilled(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 100, 50));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/thNY62366J.jpg"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, -1, -1));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/+2.jpg"))); // NOI18N
+        jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 100, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/thNY62366J.jpg"))); // NOI18N
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, -1, -1));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/pilhafinal3.PNG"))); // NOI18N
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/thNY62366J.jpg"))); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, -1, -1));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/alegra.PNG"))); // NOI18N
+        jButton7.setContentAreaFilled(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/wallpaper.jpg"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, -40, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/panel.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, -10, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/panel2.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-150, 390, 930, 390));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 480));
 
@@ -229,6 +225,10 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jLabel1.setText("Talvez algo novo aconteceça");
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+try { Runtime.getRuntime().exec("cmd.exe /C start " + "https://www.allegrabrasil.com.br/?gclid=EAIaIQobChMIhpW50qCk5gIVDQ6RCh1N0A7IEAAYASAAEgLBGPD_BwE&idcmp=18f804183b574d2f94746242a5748ecc&utm_source=Google&utm_medium=link-ad&utm_content=2&utm_campaign=Always-on&ef_id=Xd7SYwAAAIYon0zT:20191207191927:s"); } catch (IOException ex) { System.out.println(ex.getMessage()); }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -272,6 +272,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -279,12 +280,9 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }
