@@ -113,7 +113,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 100, 50));
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 100, 50));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfacegrafica/Imagens/+2.jpg"))); // NOI18N
         jButton3.setContentAreaFilled(false);
